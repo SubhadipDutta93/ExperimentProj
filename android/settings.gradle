@@ -1,0 +1,7 @@
+rootProject.name = 'ExperimentProj'
+include ':react-native-sound'
+project(':react-native-sound').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-sound/android')
+include ':react-native-gvr'
+project(':react-native-gvr').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-gvr/android')
+apply from: file("../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesSettingsGradle(settings)
+include ':app'
