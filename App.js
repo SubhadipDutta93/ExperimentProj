@@ -13,6 +13,7 @@ class App extends Component {
   }
 
   createBoxes = (numberOfBoxes) => {
+    console.log(numberOfBoxes)
     let boxes = [];
     for (let i = 1; i <= numberOfBoxes; i++) {
       boxes.push(
